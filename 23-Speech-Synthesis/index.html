@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Speech Synthesis - JavaScript30 by Mohit Gupta</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="../common.css" type="text/css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <a href="https://javascript30.ayushgupta.tech" target="_blank">
+      <div class="project-tag" style="background-color: white; color: #00adb5;">
+        <div class="tag-num">#23</div>
+        <div class="tag-text">of JavaScript30</div>
+      </div>
+    </a>
+    <div class="voiceinator">
+      <h1>The Voiceinator 5000</h1>
+
+      <select name="voice" id="voices">
+        <option value="">Select A Voice</option>
+      </select>
+
+      <label for="rate">Rate:</label>
+      <input name="rate" type="range" min="0" max="3" value="1" step="0.1" />
+
+      <label for="pitch">Pitch:</label>
+
+      <input name="pitch" type="range" min="0" max="2" step="0.1" />
+      <textarea name="text">Hello! I love JavaScript 👍</textarea>
+      <button id="stop">Stop!</button>
+      <button id="speak">Speak</button>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scoped CSS Variables and JS</title>
+    <link href="src/styles.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../common.css" type="text/css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <a href="https://javascript30.ayushgupta.tech" target="_blank">
+      <div class="project-tag" style="background-color: white">
+        <div class="tag-num">#3</div>
+        <div class="tag-text">of JavaScript30</div>
+      </div>
+    </a>
+    <h2>Update CSS Variables with <span class="hl">JS</span></h2>
+
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input
+        id="spacing"
+        type="range"
+        name="spacing"
+        min="10"
+        max="200"
+        value="10"
+        data-sizing="px"
+      />
+
+      <label for="blur">Blur:</label>
+      <input
+        id="blur"
+        type="range"
+        name="blur"
+        min="0"
+        max="25"
+        value="10"
+        data-sizing="px"
+      />
+
+      <label for="base">Base Color</label>
+      <input id="base" type="color" name="base" value="#ffc600" />
+
+      <label for="border-radius">Border Radius:</label>
+      <input
+        id="border-radius"
+        type="range"
+        name="border-radius"
+        min="0"
+        max="50"
+        value="10"
+        data-sizing="px"
+      />
+    </div>
+
+    <img src="https://source.unsplash.com/featured/?dog" />
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Webcam Fun - JavaScript30 by Mohit Gupta</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="../common.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap&text=PhotoBooth" rel="stylesheet">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon-16x16.png"
+    />
+  </head>
+  <body>
+    <a href="https://javascript30.ayushgupta.tech" target="_blank">
+      <div class="project-tag" style="background-color: white; color: #F46036;">
+        <div class="tag-num">#19</div>
+        <div class="tag-text">of JavaScript30</div>
+      </div>
+    </a>
+    <div class="photobooth">
+      <h1>PhotoBooth</h1>
+      <button onClick="takePhoto()">Take Photo</button>
+      <div class="controls">
+        <div class="rgb">
+          <label for="rmin">Red Min:</label>
+          <input type="range" min="0" max="255" name="rmin" />
+          <label for="rmax">Red Max:</label>
+          <input type="range" min="0" max="255" name="rmax" />
+          <br />
+          <label for="gmin">Green Min:</label>
+          <input type="range" min="0" max="255" name="gmin" />
+          <label for="gmax">Green Max:</label>
+          <input type="range" min="0" max="255" name="gmax" />
+          <br />
+          <label for="bmin">Blue Min:</label>
+          <input type="range" min="0" max="255" name="bmin" />
+          <label for="bmax">Blue Max:</label>
+          <input type="range" min="0" max="255" name="bmax" />
+        </div>
+      </div>
+
+      <canvas class="photo"></canvas>
+      <video class="player"></video>
+      <div>
+        Click to download
+      </div>
+      <div class="strip"></div>
+    </div>
+
+    <audio
+      class="snap"
+      src="./snap.mp3"
+      hidden
+    ></audio>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
